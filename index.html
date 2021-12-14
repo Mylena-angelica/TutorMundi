@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="port">
+  <head>
+    <meta charset="utf-8">
+    <title>avaliando o tutor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container">     
+    <img src="livro.png" alt="livro">
+    </img>
+    <h1> Como foi a ajuda do tutor?</h1>
+      <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <header></header>    
+        <form action="#">                
+          <div class="btn">
+            <button type="submit">Pular</button> 
+            <button type="submit">Confirmar</button>            
+          </div>
+        
+        </form>
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector("button");     
+      const widget = document.querySelector(".star-widget");     
+      btn.onclick = ()=>{
+        widget.style.display = "none";
+        
+        }
+        return false;
+      
+    </script>
+  </body>
+</html>
