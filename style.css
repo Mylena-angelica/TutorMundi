@@ -24,35 +24,6 @@ html,body{
   flex-direction: column;
 }
 
-.container .star-widget input{
-  display: none;
-  
-}
-.star-widget label{
-  font-size: 40px;
-  color: rgb(177, 172, 172);      
-  padding: 10px;
-  float: right;
-  transition: all 0.2s ease;
-}
-input:not(:checked) ~ label:hover,
-input:not(:checked) ~ label:hover ~ label{
-  color: #FFDC64;
-}
-input:checked ~ label{
-  color: #FFDC64;
-}
-input#rate-5:checked ~ label{
-  color: #FFDC64;
-  
-}
-
-.container form{
-  display: none;
-}
-input:checked ~ form{
-  display: block;
-}
  header{
   width: 100%;
   font-size: 25px;
@@ -62,7 +33,7 @@ input:checked ~ form{
   text-align: center;
   transition: all 0.2s ease;
 }
-.btn{  
+.pular .confirmar{  
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -70,7 +41,22 @@ input:checked ~ form{
   width: 100px;
   margin: 0 auto ;
 }
-.btn button {
+.pular button {
+  
+  box-shadow: -4px 12px 25px -10px #2EAFB9;  
+  height: 100%;
+  width: 100%;
+  border: none;  
+  color: #2CC6D0;
+  background: #F2F2F2;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor:pointer;
+  transition: all 0.3s ease;
+}
+
+.confirmar button {
   
   box-shadow: -4px 12px 25px -10px #2EAFB9;  
   height: 100%;
@@ -85,7 +71,7 @@ input:checked ~ form{
   cursor:pointer;
   transition: all 0.3s ease;
 }
-form .btn button:hover{
+form .pular .confirmar button:hover{
   background: #acccce;
   
 }
