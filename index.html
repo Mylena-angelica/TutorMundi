@@ -1,46 +1,51 @@
 <!DOCTYPE html>
-<html lang="port">
-  <head>
-    <meta charset="utf-8">
-    <title>avaliando o tutor</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  </head>
-  <body>
-    <div class="container">     
-    <img src="livro.png" alt="livro">
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avalie o tutor</title>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" 
+</head>
+<body>
+<div class="container">     
+   <img src="livro.png" alt="livro">
     </img>
-    <h1> Como foi a ajuda do tutor?</h1>
-      <div class="star-widget">
-        <input type="radio" name="rate" id="rate-5">
-        <label for="rate-5" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-4">
-        <label for="rate-4" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-3">
-        <label for="rate-3" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-2">
-        <label for="rate-2" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-1">
-        <label for="rate-1" class="fas fa-star"></label>
-        <header></header>    
-        <form action="#">                
-          <div class="btn">
-            <button type="submit">Pular</button> 
-            <button type="submit">Confirmar</button>            
-          </div>
+<h1> Como foi a ajuda do tutor?</h1>
+</div>
+<div class="star">
+
+<a href="javascript:void(0)" onclick="Avaliar(1)">
+<img src="estrela_vazia.svg" id="s1"></a>
+
+<a href="javascript:void(0)" onclick="Avaliar(2)">
+<img src="estrela_vazia.svg" id="s2"></a>
+
+<a href="javascript:void(0)" onclick="Avaliar(3)">
+<img src="estrela_vazia.svg" id="s3"></a>
+
+<a href="javascript:void(0)" onclick="Avaliar(4)">
+<img src="estrela_vazia.svg" id="s4"></a>
+
+<a href="javascript:void(0)" onclick="Avaliar(5)">
+<img src="estrela_vazia.svg" id="s5"></a>
+
+
+
+</div>
+
+</body>
+<form action="#"> 
+
+<div class="pular" >
+  <button type="submit" >Pular</button>              
+  </div>
+<div class="confirmar" >
+  <button type="submit">Confirmar</button> 
+  </div>
+  </form>
+
+
         
-        </form>
-      </div>
-    </div>
-    <script>
-      const btn = document.querySelector("button");     
-      const widget = document.querySelector(".star-widget");     
-      btn.onclick = ()=>{
-        widget.style.display = "none";
-        
-        }
-        return false;
-      
-    </script>
-  </body>
 </html>
